@@ -549,7 +549,7 @@ h1, h2, h3, h4, h5,
   margin-bottom: 0px;
   z-index: 1999;
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: white;
   top: 0;
   width: 100%;
   padding: 1rem; }
