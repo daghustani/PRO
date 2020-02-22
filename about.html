@@ -1,5 +1,3 @@
-<!doctype html>
-<html lang="en">
 
   <head>
     <title>Sara Daghustani &mdash; Protofilio Website </title>
@@ -8,41 +6,70 @@
     <!-- TEXT FONT -->
     <link href="https://fonts.googleapis.com/css?family=Muli:400,700" rel="stylesheet">
     <!-- Bootsrtap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="css/style.css">
+  
+    <!-- Link -->
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+   
   </head>
 
   <body>
-
-      <!-- Header with the navbar -->
-    <header class="site-navbar">
-      <div class="container">
-        <div class="row">
-          <!-- Navbar Logo on the Left linked to Home Page -->
-          <div class="col-3 ">
-            <div class="site-logo">
-              <a href="index.html" class="font-weight-bold">Sara Daghustani.</a>
+    
+         <!-- navbar-toggler Icone -->
+         <div class="site-mobile-menu site-navbar-target">
+          <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+              <span class="icon-close2 js-menu-toggle"></span>
             </div>
           </div>
-             <!-- End of Navbar logo on the Left -->
-
-            <!-- Navbar links on the Right links for Home Page, About Me Page, Project Page, Journal Page, Contact Me Page -->
-          <div class="col-9 text-right">
-            <nav class="site-navigation">
-              <ul class="site-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li class="active" ><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="work.html" class="nav-link">Project</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
-          <!-- End of Navbar links on the Right -->
+          <div class="site-mobile-menu-body"></div>
         </div>
-      </div>
-    </header>
-    <!-- End of Header with the navbar -->
+  
+        <!-- Header -->
+        <header class="site-navbar site-navbar-target" role="banner">
+          <!-- Header Container -->
+          <div class="container">
+            <!-- Header Row -->
+            <div class="row align-items-center position-relative">
+              <!-- Col with site logo-->
+              <div class="col-3 ">
+                <div class="site-logo">
+                  <a href="index.html" class="font-weight-bold">Sara Daghustani.</a>
+                </div>
+              </div>
+               <!-- End of Col with site logo -->
+               
+               <!-- Col with toggle icon and Navbar menu -->
+              <div class="col-9  text-right">
+                <!-- Toggle icon-->
+                <span class="d-inline-block d-lg-block">
+                  <a href="#" class="text-white site-menu-toggle js-menu-toggle py-5 text-white">
+                    <span class="icon-menu h3 text-white"></span>
+                  </a>
+                </span>
+                <!-- End of Toggle icon-->
+  
+                <!-- Navbar menu  -->
+                <nav class="site-navigation text-right ml-auto d-none d-lg-none" role="navigation">
+                  <ul class="site-menu main-menu js-clone-nav ml-auto ">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="active"><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="work.html" class="nav-link">Project</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                  </ul>
+                </nav>
+                <!-- End of Navbar menu -->
+              </div>
+            <!--End of Col with toggle icon and Navbar menu -->
+            </div>
+           <!-- End of Header Row -->
+          </div>
+          <!-- End of Header Container -->
+        </header>
+        <!-- End of Header -->
 
     <!-- Cover Page with background Image with container of Inofrmation with H1 header, P Pargraph -->
     <div class="site-section-cover overlay" style="background-image: url('images/home.png')">
@@ -329,20 +356,20 @@
               <div class="col-md-6">
                 <ul class="timeline">
                   <li>
-                    <a target="_blank" href="#">Software Engineering Immersive Course</a>
-                    <a href="#" class="float-right">07/07/2019 - 12/09/2019</a>
+                    <a>Software Engineering Immersive Course</a>
+                    <a class="float-right">07/07/2019 - 12/09/2019</a>
                     <p>Misk Academy + General Assembly, Key Course Topic Areas: Programming and Problem Solving, Git, HTML/CSS, Javascript, Ruby, Ruby on Rails, SQL, Mongodb, Node, Express, jQuery, React, JSON API's, Product Development and Deployment, Authentication and Authorization, Algorithms,
                       Data structure, Design Patterns and Presentation Skills. </p>
                   </li>
                   <li>
-                    <a href="#">User Experience Design Course</a>
-                    <a href="#" class="float-right">21/04/2019 - 02/05/2019</a>
+                    <a>User Experience Design Course</a>
+                    <a class="float-right">21/04/2019 - 02/05/2019</a>
                     <p>Misk Academy + General Assembly,Key Course Topic Areas: Defining a Minimal Viable Product, User Research, Personas, Affinity Mapping, Competitive Analysis, Information Architecture, 
                       Wireframing, Prototyping, Usability Testing, Evaluating Projects and Presentation Skills. </p>
                   </li>
                   <li>
-                    <a href="#">Front-End Web Development Course</a>
-                    <a href="#" class="float-right">07/04/2019 – 18/04/2019</a>
+                    <a>Front-End Web Development Course</a>
+                    <a class="float-right">07/04/2019 – 18/04/2019</a>
                     <p>Misk Academy + General Assembly,Key Course Topic Areas: HTML5 and Semantic HTML, CSS3 Styling and Page Layouts, Responsive Web Design, Javascript Fundamentals,
                        Interactive Web Pages with jQuery and DOM, Presentation Skills. </p>
                   </li>
@@ -352,28 +379,28 @@
               <div class="col-md-6">
                 <ul class="timeline">
                   <li>
-                    <a target="_blank" href="#">Makkah Chamber for Training</a>
-                    <a href="#" class="float-right">March, 2019</a>
+                    <a>Makkah Chamber for Training</a>
+                    <a class="float-right">March, 2019</a>
                     <p> Certificate of Attendance Creativity and Innovation in The Work Environment.</p>
                   </li>
                   <li>
-                    <a href="#">Club at Imam University</a>
-                    <a href="#" class="float-right"> November 2018</a>
+                    <a>Club at Imam University</a>
+                    <a class="float-right"> November 2018</a>
                     <p>Certificate of Attendance Financing Skills Workshop from Finance and Investment.</p>
                   </li>
                   <li>
-                    <a href="#">Mubtakiroon and Tech Shop</a>
-                    <a href="#" class="float-right">28 October – 11 November, 2018.</a>
+                    <a>Mubtakiroon and Tech Shop</a>
+                    <a class="float-right">28 October – 11 November, 2018.</a>
                     <p>Certificate of Attendance Bank Aljazira Innovation Support Program (Mubtakiroon) The Second Version (Applications).</p>
                   </li>
                   <li>
-                    <a href="#">Collaborative Institutional Training Initiative</a>
-                    <a href="#" class="float-right">16 March 2017</a>
+                    <a>Collaborative Institutional Training Initiative</a>
+                    <a class="float-right">16 March 2017</a>
                     <p>Biomedical Research Investigators and Key Personnel,  Expire : 15-03-2020</p>
                   </li>
                   <li>
-                    <a href="#"> Professional Development Center </a>
-                    <a href="#" class="float-right">4 June 2016</a>
+                    <a> Professional Development Center </a>
+                    <a class="float-right">4 June 2016</a>
                     <p>Certificate of Completion of Human Resources Strategies and Methods.</p>
                   </li>
                 </ul>
@@ -388,23 +415,23 @@
               <div class="col-md-6">
                 <ul class="timeline">
                   <li>
-                    <a href="#"> Professional Development Center </a>
-                    <a href="#" class="float-right">4 June 2016</a>
+                    <a> Professional Development Center </a>
+                    <a class="float-right">4 June 2016</a>
                     <p>Certificate of Completion Change Management.</p>
                   </li>
                   <li>
-                    <a href="#"> Professional Development Center </a>
-                    <a href="#" class="float-right">4 June 2016</a>
+                    <a> Professional Development Center </a>
+                    <a class="float-right">4 June 2016</a>
                     <p>Certificate of Completion IT Strategy.</p>
                   </li>
                   <li>
-                    <a href="#"> California State University, San Bernardino </a>
-                    <a href="#" class="float-right">4 April – 15 June 2015</a>
+                    <a> California State University, San Bernardino </a>
+                    <a class="float-right">4 April – 15 June 2015</a>
                     <p> Outstanding Software Engineer Award. </p>
                   </li>
                   <li>
-                    <a target="_blank" href="#"> Boston University</a>
-                    <a href="#" class="float-right"> April 2014 </a>
+                    <a> Boston University</a>
+                    <a class="float-right"> April 2014 </a>
                     <p> Certificate of Attendance Center for English Language and Orientation Programs. </p>
                   </li>
                 </ul>
@@ -413,23 +440,23 @@
               <div class="col-md-6">
                 <ul class="timeline">
                   <li>
-                    <a href="#">Boston English Language Center</a>
-                    <a href="#" class="float-right">December 2013 </a>
+                    <a>Boston English Language Center</a>
+                    <a class="float-right">December 2013 </a>
                     <p> Certificate of Completion Intensive English Program. </p>
                   </li>
                   <li>
-                    <a href="#">King Abdullah Scholarship Program</a>
-                    <a href="#" class="float-right"> December 2012</a>
+                    <a>King Abdullah Scholarship Program</a>
+                    <a class="float-right"> December 2012</a>
                     <p> Granted a Scholarship To Complete Master’s Degree.</p>
                   </li>
                   <li>
-                    <a href="#"> Umm Al-Qura University </a>
-                    <a href="#" class="float-right">June 2012</a>
+                    <a> Umm Al-Qura University </a>
+                    <a class="float-right">June 2012</a>
                     <p> Graduated with Second Honors Degree. </p>
                   </li>
                   <li>
-                    <a href="#">Umm Al-Qura University</a>
-                    <a href="#" class="float-right"> June 2012</a>
+                    <a>Umm Al-Qura University</a>
+                    <a class="float-right"> June 2012</a>
                     <p>Certificate of Hard Worker Student.</p>
                   </li>
                 </ul>
@@ -517,6 +544,11 @@
       </div>
     </footer>
     <!-- End of Footer -->
-  </body>
+
+
+<script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
 </html>
 

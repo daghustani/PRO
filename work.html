@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 
+ 
   <head>
     <title>Sara Daghustani &mdash; Protofilio Website </title>
     <meta charset="utf-8">
@@ -8,43 +9,69 @@
     <!-- TEXT FONT -->
     <link href="https://fonts.googleapis.com/css?family=Muli:400,700" rel="stylesheet">
     <!-- Bootsrtap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="css/style.css">
+  
+    <!-- Link -->
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+   
   </head>
 
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-    <div class="site-wrap" id="home-section">
-
-      <!-- Header with the navbar -->
-      <header class="site-navbar">
-        <div class="container">
-          <div class="row">
-
-            <!-- Navbar Logo on the Left linked to Home Page -->
-            <div class="col-3 ">
-              <div class="site-logo">
-                <a href="index.html" class="font-weight-bold">Sara Daghustani.</a>
-              </div>
+  <body>
+        <!-- navbar-toggler Icone -->
+        <div class="site-mobile-menu site-navbar-target">
+          <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+              <span class="icon-close2 js-menu-toggle"></span>
             </div>
-             <!-- End of Navbar logo on the Left -->
-
-            <!-- Navbar links on the Right links for Home Page, About Me Page, Project Page, Journal Page, Contact Me Page -->
-            <div class="col-9 text-right">
-              <nav class="site-navigation">
-                <ul class="site-menu">
-                  <li><a href="index.html" class="nav-link">Home</a></li>
-                  <li><a href="about.html" class="nav-link">About</a></li>
-                  <li class="active"><a href="work.html" class="nav-link">Project</a></li>
-                  <li><a href="contact.html" class="nav-link">Contact</a></li>
-                </ul>
-              </nav>
-            </div>
-            <!-- End of Navbar links on the Right -->
           </div>
+          <div class="site-mobile-menu-body"></div>
         </div>
-      </header>
-      <!-- End of Header with the navbar -->
+  
+        <!-- Header -->
+        <header class="site-navbar site-navbar-target" role="banner">
+          <!-- Header Container -->
+          <div class="container">
+            <!-- Header Row -->
+            <div class="row align-items-center position-relative">
+              <!-- Col with site logo-->
+              <div class="col-3 ">
+                <div class="site-logo">
+                  <a href="index.html" class="font-weight-bold">Sara Daghustani.</a>
+                </div>
+              </div>
+               <!-- End of Col with site logo -->
+               
+               <!-- Col with toggle icon and Navbar menu -->
+              <div class="col-9  text-right">
+                <!-- Toggle icon-->
+                <span class="d-inline-block d-lg-block">
+                  <a href="#" class="text-white site-menu-toggle js-menu-toggle py-5 text-white">
+                    <span class="icon-menu h3 text-white"></span>
+                  </a>
+                </span>
+                <!-- End of Toggle icon-->
+  
+                <!-- Navbar menu  -->
+                <nav class="site-navigation text-right ml-auto d-none d-lg-none" role="navigation">
+                  <ul class="site-menu main-menu js-clone-nav ml-auto ">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li class="active"><a href="work.html" class="nav-link">Project</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                  </ul>
+                </nav>
+                <!-- End of Navbar menu -->
+              </div>
+            <!--End of Col with toggle icon and Navbar menu -->
+            </div>
+           <!-- End of Header Row -->
+          </div>
+          <!-- End of Header Container -->
+        </header>
+        <!-- End of Header -->
 
     <!-- Cover Page with background Image with container of Inofrmation with H1 header, P Pargraph -->
     <div class="site-section-cover overlay" style="background-image: url('images/home.png')">
@@ -190,6 +217,9 @@
       </div>
     </footer>
     <!-- End of Footer -->
+  
+  <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
   </body>
-</html>
-
+  </html>
