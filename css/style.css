@@ -29,9 +29,7 @@ ul.timeline > li:before {
   z-index: 400;
 }
 
-.imgborder{
-  border:1px solid gainsboro ;
-}
+
 .card {
   border: none;
 }
@@ -550,6 +548,7 @@ h1, h2, h3, h4, h5,
   z-index: 1999;
   background-color: white;
   position: fixed;
+  border-bottom: 1px solid #01d28e ;
   top: 0;
   width: 100%;
   padding: 1rem; }
