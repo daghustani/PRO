@@ -358,7 +358,7 @@ jQuery(document).ready(function($) {
 
  // Your web app's Firebase configuration
  var firebaseConfig = {
-    
+   
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
@@ -386,6 +386,16 @@ var message = getInputVal("message");
 //save massage
 saveMessage(firstName, lastName, email, message);
 
+// show alart
+document.querySelector('.alart').style.display= "block";
+
+// Hide alart after 3 second 
+setTimeout(function(){
+	document.querySelector('.alart').style.display= "none";
+}, 3000);
+
+ //clear from
+	document.getElementById('contactForm').reset();
 }
 
 // function to get  form value 
