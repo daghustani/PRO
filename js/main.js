@@ -394,10 +394,20 @@ saveMessage(firstName, lastName, email, message);
 
 // show alart
 document.querySelector('.alart').style.display= "block";
+document.querySelector('#firstName').style.display= "none";
+document.querySelector('#lastName').style.display= "none";
+document.querySelector('#email').style.display= "none";
+document.querySelector('#message').style.display= "none";
+document.querySelector('#submit').style.display= "none";
 
 // Hide alart after 3 second 
 setTimeout(function(){
 	document.querySelector('.alart').style.display= "none";
+	document.querySelector('#firstName').style.display= "block";
+	document.querySelector('#lastName').style.display= "block";
+	document.querySelector('#email').style.display= "block";
+	document.querySelector('#message').style.display= "block";
+	document.querySelector('#submit').style.display= "block";
 }, 3000);
 
  //clear from
@@ -419,5 +429,5 @@ function saveMessage(firstName, lastName, email, message){
 		message : message
 	});
 
-	
+
 }
