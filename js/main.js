@@ -1,3 +1,6 @@
+
+
+
  AOS.init({
  	duration: 800,
  	easing: 'slide',
@@ -351,3 +354,52 @@ jQuery(document).ready(function($) {
   siteIstotope();
 
 });
+
+
+ // Your web app's Firebase configuration
+ var firebaseConfig = {
+    
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+
+// Reference messages collection
+ var messagesRef = firebase.database().ref('messages');
+
+
+//Listen for form submit
+document.getElementById('contactForm').addEventListener('submit', submitForm);
+
+// submit form 
+function submitForm(e){
+e.preventDefault();
+console.log(123);
+
+//Get Value
+var firstName = getInputVal("firstName");
+var lastName = getInputVal("lastName");
+var email = getInputVal("email");
+var message = getInputVal("message");
+// console.log(firstName + " " + lastName +" "+ email + " "+ message);
+
+//save massage
+saveMessage(firstName, lastName, email, message);
+
+}
+
+// function to get  form value 
+function getInputVal(id){
+	return document.getElementById(id).value;
+}
+
+// save massage to firebase
+function saveMessage(firstName, lastName, email, message){
+	var newMessageRef = messagesRef.push();
+	newMessageRef.set({
+		firstName : firstName,
+		lastName : lastName,
+		email : email,
+		message : message
+	});
+}
