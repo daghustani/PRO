@@ -358,7 +358,13 @@ jQuery(document).ready(function($) {
 
  // Your web app's Firebase configuration
  var firebaseConfig = {
-   
+    apiKey: "AIzaSyAi7XpZN5fXEZHtWD_iWqKsWN1PwX11zsM",
+    authDomain: "sara-contact-form.firebaseapp.com",
+    databaseURL: "https://sara-contact-form.firebaseio.com",
+    projectId: "sara-contact-form",
+    storageBucket: "sara-contact-form.appspot.com",
+    messagingSenderId: "935236623085",
+    appId: "1:935236623085:web:c247e90b717620362f8ae4"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
