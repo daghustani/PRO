@@ -399,6 +399,7 @@ document.querySelector('#lastName').style.display= "none";
 document.querySelector('#email').style.display= "none";
 document.querySelector('#message').style.display= "none";
 document.querySelector('#submit').style.display= "none";
+// document.querySelector("#firstName, #lastName, #email, #message, #submit").style.display= "none";
 
 // Hide alart after 3 second 
 setTimeout(function(){
