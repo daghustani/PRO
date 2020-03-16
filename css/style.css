@@ -1,4 +1,6 @@
-
+.fa{
+  width: 50%; 
+}
 .image-flip:hover .backside,
 .image-flip.hover .backside {
     -webkit-transform: rotateY(0deg);
