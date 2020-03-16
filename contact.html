@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 
-  
+  <!-- Head -->
   <head>
     <title>Sara Daghustani &mdash; Protofilio Website </title>
     <meta charset="utf-8">
@@ -15,9 +15,9 @@
     <!-- navbar-toggler Icone style-->
     <link rel="stylesheet" href="fonts/icomoon/style.css">
   </head>
+  <!-- End of Head -->
 
-  <body>
-      
+  <body>  
     <!-- navbar-Menu-toggle  -->
     <div class="site-mobile-menu site-navbar-target">
       <div class="site-mobile-menu-header">
@@ -86,65 +86,83 @@
     </div>
     <!-- End of Cover -->
     
-
+    <!-- Contact me page -->
    <div class="site-section">
       <div class="container">
-
-        
-       
+        <!-- Row -->
         <div class="row">
+          <!-- Col 1 -->
           <div class="col-lg-8 mb-5" >
-
-            <!-- Form  -->
+            <!-- Contact me Form  -->
             <form action="#" method="post" id="contactForm">
+              <!-- First and Last Name group row -->
               <div class="form-group row">
+                <!-- First Name -->
                 <div class="col-md-6 mb-4 mb-lg-0">
                   <input type="text" class="form-control" placeholder="First name" id="firstName" required >
                 </div>
+                <!-- End of First Name -->
+                <!-- Last Name -->
                 <div class="col-md-6">
                   <input type="text" class="form-control" placeholder="Last name" id="lastName" required>
                 </div>
+                <!--End of last Name -->
               </div>
-
+              <!-- End of First and Last Name group row -->
+              <!-- Email group row -->
               <div class="form-group row">
+                 <!-- Email -->
                 <div class="col-md-12">
                   <input type="email" class="form-control" id="email" placeholder="Email address"  name="email" id="email" required>
                 </div>
+                <!-- End of Email -->
               </div>
+              <!-- End of Email group row -->
+
+              <!-- ************ Alart that will show and hide ************** -->
               <div class = "alart">Your message has been sent</div>
+              <!-- *********************************** -->
+
+              <!-- Message group row -->
               <div class="form-group row">
+                <!-- Message -->
                 <div class="col-md-12">
                   <textarea name=""  class="form-control" placeholder="Write your message." cols="30" rows="10" maxlength="6000" id="message" required></textarea>
                 </div>
+                <!-- End of Message -->
               </div>
+              <!-- End of Message group row -->
+              <!-- Submit group row -->
               <div class="form-group row" id="submit">
+                <!-- Submit -->
                 <div class="col-md-6 mr-auto">
                   <input type="submit" class="btn btn-block btn-primary text-white py-3 px-5" value="Send Message" >
                 </div>
+                <!-- End of Submit -->
               </div>
+              <!-- End of Submit group row -->
             </form>
-            <!-- End of Form -->
-
-
+            <!-- End of Contact me Form -->
           </div>
+          <!-- End of Col 1 -->
+          <!-- Col 2 -->
           <div class="col-lg-4 ml-auto">
             <div class="bg-white p-3 p-md-5">
               <h3 class="text-black mb-4">Contact Info</h3>
               <ul class="list-unstyled footer-link">
-                <li class="d-block mb-3">
-                  <!-- <span class="d-block text-black">Address:</span>
-                  <span>34 Street Name, City Name Here, United States</span></li> -->
                 <li class="d-block mb-3"><span class="d-block text-black">Phone:</span><span>+966 556161380</span></li>
                 <li class="d-block mb-3"><span class="d-block text-black">Email:</span><span>sara.daghustani@gmail.com</span></li>
                 <li class="d-block mb-3"><span class="d-block text-black">LinkedIn:</span><span><a target="_blank" href="https://www.linkedin.com/in/sara-daghustani/">sara-daghustani </a></span></li>
               </ul>
             </div>
           </div>
+          <!-- End of Col 2 -->
         </div>
+        <!-- End of Row -->
         
       </div>
-    </div> <!-- END .site-section -->
-    
+    </div> 
+    <!-- End of Contact me page  -->
     
     <!-- Footer  -->
     <footer class="bg-light">
@@ -160,15 +178,12 @@
       </div>
     </footer>
     <!-- End of Footer -->
-
    
     <!-- Script for navbar-toggler -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/aos.js"></script>
-
    <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase.js"></script>
-
     <script src="js/main.js"></script>
     <!-- End of Script for navbar-toggler -->
   </body>
