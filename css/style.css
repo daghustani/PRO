@@ -73,13 +73,11 @@
     transform-style: preserve-3d;
 }
 
-.frontside .card
+.frontside .card, .backside .card
 {
-    min-height: 312px;
+    min-height: 375px;
 }
-.backside .card {
-  min-height: 400px;
-}
+
 
 .frontside .card .card-title,
 .backside .card .card-title {
