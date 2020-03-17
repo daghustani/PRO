@@ -73,10 +73,9 @@
     transform-style: preserve-3d;
 }
 
-.frontside .card, 
-.backside .card 
-{
-    min-height: 385px;
+.frontside .card,
+.backside .card {
+    min-height: 312px;
 }
 
 
